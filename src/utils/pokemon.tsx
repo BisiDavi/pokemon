@@ -3,7 +3,6 @@ import {
     physicType,
     physicTypeInterface,
     PokemonFeatureArray,
-    PokemonProps,
 } from '../types';
 
 const pokemonArray: featureIndex[] = ['types', 'weaknesses', 'resistant'];
