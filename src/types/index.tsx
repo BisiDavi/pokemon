@@ -7,13 +7,13 @@ export interface PokemonProps {
         image: string;
         types: string[];
         fleeRate: string;
+        resistant: string[];
+        weaknesses: string[];
         classification: string;
         height: {
             minimum: string;
             maximum: string;
         };
-        resistant: string[];
-        weaknesses: string[];
         weight: {
             minimum: string;
             maximum: string;
@@ -30,3 +30,14 @@ export interface PokemonFeatureArray {
 export type featureIndex = 'types' | 'resistant' | 'weaknesses';
 
 export type physicType = 'height' | 'weight';
+
+export interface physicTypeInterface {
+    height: {
+        minimum: string;
+        maximum: string;
+    };
+    weight: {
+        minimum: string;
+        maximum: string;
+    };
+}

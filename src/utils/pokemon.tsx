@@ -1,6 +1,7 @@
 import {
     featureIndex,
     physicType,
+    physicTypeInterface,
     PokemonFeatureArray,
     PokemonProps,
 } from '../types';
@@ -23,7 +24,7 @@ const PokemonFeatures = (
     );
 };
 
-const PokemonPhysic = (pokemon: any, physic: physicType) => {
+const PokemonPhysic = (pokemon: physicTypeInterface, physic: physicType) => {
     return (
         <ul className={physic}>
             {physic}
@@ -33,7 +34,7 @@ const PokemonPhysic = (pokemon: any, physic: physicType) => {
     );
 };
 
-export const displayPhysic = (pokemon: PokemonProps) =>
+export const displayPhysic = (pokemon: physicTypeInterface) =>
     physicArray.map((physic) => PokemonPhysic(pokemon, physic));
 
 export const displayFeatures = (pokemon: PokemonFeatureArray) =>
