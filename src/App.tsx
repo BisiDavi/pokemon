@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
+import PokemonsContainer from './containers/Pokemons.container';
 
 const App: FC = (): JSX.Element => {
     return (
-        <main className='App'>
-            <h1>Hello</h1>
+        <main>
+            <PokemonsContainer />
         </main>
     );
 };

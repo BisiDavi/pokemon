@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 const client = new ApolloClient({
-    uri: 'https://graphqlpokemon.favware.tech',
+    uri: 'https://graphql-pokemon2.vercel.app',
     cache: new InMemoryCache(),
 });
 
